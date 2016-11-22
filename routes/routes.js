@@ -19,10 +19,11 @@ var appRouter = function(app) {
 
     //    return res.send({"status": "error", "message": "missing a parameter"});
     } else {
-        Cookies.set("Linked_" + req.body.urlscheme, req.body.urlscheme + req.body.appname + req.body.username)
+        Cookies.set("Linked_" + req.body.urlscheme, req.body.urlscheme + req.body.appname + req.body.username, { expires: 7 })
         Cookies.set('tratata', 'blablabla');
         var tempCookies = Cookies.get('tratata');
         console.log(Cookies.get());
+        res.cookie("Linked_" + req.body.urlscheme, req.body.urlscheme + req.body.appname + req.body.username);
         return res.send(req.body);
     }
   });
