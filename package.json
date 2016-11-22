@@ -7,14 +7,16 @@
     "start": "node index.js"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "body-parser": "^1.15.0",
+    "js-cookie": ""
   },
   "engines": {
     "node": "4.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-sample"
+    "url": "https://github.com/freennnn"
   },
   "keywords": [
     "node",
